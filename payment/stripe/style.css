@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1a1f36;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.breadcrumb-bar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0px 32px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.back-link {
+    color: #1a365d;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.back-link i {
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Logo Stripe */
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #0a2540;
+    margin-bottom: 32px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0a2540;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3c4257;
+}
+
+.forgot-link {
+    font-size: 14px;
+    color: #635bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 1px solid #e6ebf1;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #635bff;
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.15);
+}
+
+/* Case à cocher */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #3c4257;
+    cursor: pointer;
+}
+
+.checkbox-container input {
+    background-color: #635bff;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Bouton de connexion principal */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #a9a3ff; /* Teinte claire similaire à l'image */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 24px;
+}
+
+.btn-submit:hover {
+    background-color: #8f85ff;
+}
+
+/* Séparateur "Ou connectez-vous avec" */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #8792a2;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e6ebf1;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .75em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .75em;
+}
+
+/* Boutons de connexion tiers (Google, Clé d'accès, SSO) */
+.btn-social {
+    width: 100%;
+    padding: 11px;
+    background-color: #ffffff;
+    border: 1px solid #e6ebf1;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #3c4257;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+    transition: background-color 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-social svg, .btn-social img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Bloc bas de page : Créer un compte */
+.signup-box {
+    margin-top: 24px;
+    background-color: #f8f9fa;
+    border: 1px solid #f0f3f6;
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #3c4257;
+}
+
+.signup-box a {
+    color: #635bff;
+    text-decoration: none;
+    font-weight: 500;
+}
